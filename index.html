@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessMail - your socials and DM's in one place</title>
     <meta name="robots" content="index, follow">
     <meta name="description"
-        content="MessageMail is an application with all of yours social media DM's and notifications. It is created to help you manage your messages, which is a key to save your priceless time.">
-    <meta property="og:description"
-        content="MessageMail is an application with all of yours social media DM's and notifications. It is created to help you manage your messages, which is a key to save your priceless time.">
+        content="Manage your DM's and mails in one place.">
     <meta name="keywords" content="messages, socials, time-saver,messagemail, mail">
-    <title>MessageMail - your socials and DM's in one place</title>
     <meta property="og:title" content="MessageMail - all your socials and DM's in one place">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,43 +24,82 @@
 </head>
 
 <body>
-
+    <div class="section" id="home"></div>
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+        <div class="wrapper">
+            <img src="./dist/img/close.svg" alt="" class="mobile-nav__close">
+            <div class="mobile-nav__options">
+                <a href="#home" class="mobile-nav__option">Home</a>
+                <a href="#about" class="mobile-nav__option">About App</a>
+                <a href="#features" class="mobile-nav__option">Features</a>
+                <a href="#testimonials" class="mobile-nav__option">Testimonials</a>
+                <a href="login.html" class=" mobile-nav__option mobile-nav__login">Login</a>
+                <a href="sign.html" class="mobile-nav__option mobile-nav__sign">Sign Up</a>
+            </div>
+        </div>
+    </div>
     <nav class="nav">
         <div class="wrapper">
-            <div class="logo">
+            <div class="logo nav-logo">
                 <img src="./dist/img/logo-small.png" alt="messagemail logo" class="logo-img">
-                <span class="logo-logo">MessageMail</span>
+                <span class="logo-logo">MessMail</span>
             </div>
-            <img src="./dist/img/burger-menu-right-svgrepo-com.svg" class="nav__burger" alt="navigation icon">
+            <div class="nav__center">
+                <a href="#home" class="nav__option first-option">Home</a>
+                <a href="#about" class="nav__option second-option">About App</a>
+                <a href="#features" class="nav__option third-option">Features</a>
+                <a href="#testimonials" class="nav__option fourth-option">Testimonials</a>
+            </div>
+            <div class="nav__right-side">
+                <div class="nav__logins">
+                    <a href="login.html" class="nav__login1">Login</a>
+                    <a href="sign.html">
+                        <div class="nav__sign1">Sign up</div>
+                    </a>
+                </div>
+                <img src="./dist/img/burger-menu-right-svgrepo-com.svg" class="nav__burger" alt="navigation icon">
+            </div>
         </div>
     </nav>
-    <header class="header">
+    <header class="header section">
         <div class="wrapper">
-            <h1 class="header__headline">Manage your DM's with Ease</h1>
-            <p class="header__subheadline">We offer you a central location to manage all of your social media account's
-                direct messages!</p>
+            <div class="header__left">
+                <h1 class="header__headline">Manage your DM's with Ease</h1>
+                <p class="header__subheadline">We offer you a central location to manage all of your social media
+                    account's
+                    direct messages!</p>
+                <div class="cta-box cta-left">
+                    <p class="cta-text">Ready to get started?</p>
+                    <a href="sign.html">
+                        <div class="cta-button">Manage my DM's</div>
+                    </a>
+                </div>
+            </div>
             <img src="./dist/img/hero-img.svg" alt="hero image represents a woman checking her tasks"
                 class="header__hero-img">
 
-            <div class="cta-box">
+            <div class="cta-box cta-bot">
                 <p class="cta-text">Ready to get started?</p>
-                <div class="cta-button">Manage my DM's</div>
+                <a href="sign.html">
+                    <div class="cta-button">Manage my DM's</div>
+                </a>
             </div>
         </div>
 
     </header>
     <main class="main">
-        <section class="about">
+        <section class="about section" id="about">
             <div class="wrapper">
                 <h2 class="section-title">
                     About our app
                 </h2>
-                <p class="about__text">MessageMail is a notifications center, that will collect all of your social media
+                <p class="about__text">MessMail is a notifications center, that will collect all of your social media
                     notifications, so you can check all your DM’s in a one place, this innovational solution is ultimate
                     time-saver and anti-distraction tool, which you should install for your own good </p>
             </div>
         </section>
-        <section class="features">
+        <section class="features section" id="features">
             <div class="wrapper">
                 <h2 class="section-title">Features</h2>
                 <div class="features__container">
@@ -70,7 +107,7 @@
                         <img src="./dist/img/testimonials-1.svg"
                             alt="features image one represents security of ours app" class="features__feature__img">
                         <p class="features__feature__text">We know how important <span>security</span> is, that’s why
-                            MessageMail has the best innovations to make your data <span>safe</span></p>
+                            MessMail has the best innovations to make your data <span>safe</span></p>
                     </div>
                     <div class="features__feature feature-two">
                         <img src="./dist/img/5qzsz159exsm94fv3z0.svg"
@@ -81,7 +118,7 @@
                     <div class="features__feature feature-three">
                         <img src="./dist/img/coxhkz1a1jsm94fvatz.svg"
                             alt="features image one represents security of ours app" class="features__feature__img">
-                        <p class="features__feature__text">Wherever you are, MessageMail will always work, for it’s
+                        <p class="features__feature__text">Wherever you are, MessMail will always work, for it’s
                             <span>lightweight</span> structure, fast network is not necessary
                         </p>
                     </div>
@@ -96,31 +133,40 @@
             </div>
         </section>
         <div class="wrapper">
-            <section class="testimonials">
+            <section class="testimonials section" id="testimonials">
                 <h2 class="section-title">Testimonials</h2>
-                <div class="testimonials__box testimonials__first">
-                    <p class="testimonials__text"><span class="q1">“</span>Friend of mine told me about this app and how
-                        MessageMail can impact
-                        on my
-                        life, I am not disappointed.<span class="q2">“</span></p>
-                    <p class="testimonials__author">- Eric Adams, App Store</p>
-                </div>
-                <div class="testimonials__box">
-                    <p class="testimonials__text"><span class="q1">“</span>I can truly tell that this app is useful,
-                        even if it’s not popular right now, I am sure it will be because its life-changing.<span
-                            class="q2">“</span></p>
-                    <p class="testimonials__author">- Monica Williams, App Store</p>
-                </div>
-                <div class="testimonials__box">
-                    <p class="testimonials__text"><span class="q1">“</span>Finally we have a great competitor for Mail
-                        Boxes. I truly love customizability of the interface.<span class="q2">“</span></p>
-                    <p class="testimonials__author">- Alex Tuberg, Google Play</p>
+                <div class="testimonials__container">
+                    <div class="testimonials__box testimonials__first">
+                        <img src="./dist/img/face1.png" alt="" class="testimonials__circle">
+                        <p class="testimonials__text"><span class="q1">“</span>Friend of mine told me about this app and
+                            how
+                            MessMail can impact
+                            on my
+                            life, I am not disappointed.<span class="q2">“</span></p>
+                        <p class="testimonials__author">- Eric Adams, App Store</p>
+                    </div>
+                    <div class="testimonials__box">
+                        <img src="./dist/img/face3woman.png" alt="" class="testimonials__circle">
+                        <p class="testimonials__text"><span class="q1">“</span>I can truly tell that this app is useful,
+                            even if it’s not popular right now, I am sure it will be because its lit.<span
+                                class="q2">“</span></p>
+                        <p class="testimonials__author">- Monica Williams, App Store</p>
+                    </div>
+                    <div class="testimonials__box">
+                        <img src="./dist/img/face2.png" alt="" class="testimonials__circle">
+                        <p class="testimonials__text"><span class="q1">“</span>Finally we have a great competitor for
+                            Mail
+                            Boxes. I truly love customizability of the interface.<span class="q2">“</span></p>
+                        <p class="testimonials__author">- Alex Tuberg, Google Play</p>
+                    </div>
                 </div>
             </section>
         </div>
         <div class="cta-box cta-box-bottom">
             <p class="cta-text">Ready to get started?</p>
-            <div class="cta-button">Manage my DM's</div>
+            <a href="sign.html">
+                <div class="cta-button">Manage my DM's</div>
+            </a>
         </div>
     </main>
     <div class="newsletter-box">
@@ -137,31 +183,41 @@
     <div class="footer-container">
         <div class="wrapper">
             <footer class="footer">
-                <div class="logo">
-                    <img src="./dist/img/logo-small.png" alt="messagemail logo" class="logo-img">
-                    <span class="logo-logo">MessageMail</span>
-                </div>
-                <div class="footer__address">
-                    <p>Beverly Hills 312/58,</p>
-                    <p>90210 Los Angeles</p>
-                    <p>California, USA</p>
-                </div>
-                <div class="footer__contacts">
-                    <div class="footer__phone-box footer__contact">
-                        <img src="./dist/img/phone.svg" alt="phone icon">
-                        <span>+48 731-394-399</span>
+                <div class="footer__top">
+                    <div class="footer__left">
+                        <div class="logo">
+                            <img src="./dist/img/logo-small.png" alt="messagemail logo" class="logo-img">
+                            <span class="logo-logo">MessMail</span>
+                        </div>
+                        <div class="footer__address">
+                            <p>Beverly Hills 312/58,</p>
+                            <p>90210 Los Angeles</p>
+                            <p>California, USA</p>
+                        </div>
                     </div>
-                    <div class="footer__mail-box footer__contact">
-                        <img src="./dist/img/mail.svg" alt="mailbox icon">
-                        <span>wawrzyniakf8@gmail.com</span>
-                    </div>
-                </div>
-                <div class="footer__about-app">
-                    <b>More about app</b>
-                    <div class="footer__about-list">
-                        <p>How to install</p>
-                        <p>Updates</p>
-                        <p>Report a bug</p>
+                    <div class="footer__right">
+                        <div class="footer__contacts">
+                            <div class="footer__phone-box footer__contact">
+                                <img src="./dist/img/phone.svg" alt="phone icon">
+                                <span><a href="tel:+">+48 731-394-399</a></span>
+                            </div>
+                            <div class="footer__mail-box footer__contact">
+                                <img src="./dist/img/mail.svg" alt="mailbox icon">
+                                <span><a href="mailto:wawrzyniakf8@gmail.com">wawrzyniakf8@gmail.com</a></span>
+                            </div>
+                            <div class="footer__contact-form footer__contact">
+                                <img src="./dist/img/form-one-svgrepo-com.svg" alt="form icon">
+                                <span><a href="#">Contact Form</a></span>
+                            </div>
+                        </div>
+                        <div class="footer__about-app">
+                            <b>More about app</b>
+                            <div class="footer__about-list">
+                                <p>How to install</p>
+                                <p>Updates</p>
+                                <p>Report a bug</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="footer__socials">
@@ -171,7 +227,7 @@
                     <img src="./dist/img/7p4fr6oygkmm94fwxrk.svg" alt="">
                 </div>
                 <hr>
-                <p class="footer__privacy">Copyright 2025 mockncode. All rights reserved.</p>
+                <p class="footer__privacy">© Copyright 2025 mockncode. All rights reserved.</p>
             </footer>
         </div>
     </div>
