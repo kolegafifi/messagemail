@@ -3,6 +3,7 @@ const signPass = document.querySelector('#sign-pass')
 const signRePass = document.querySelector('#sign-repass')
 const signCheckbox = document.querySelector('#sign-checkbox')
 const signButton = document.querySelector('.sign-button')
+const signText = document.querySelector('.login__signed-up')
 
 handleSign = () => {
 	errors = 0
@@ -20,6 +21,11 @@ handleSign = () => {
 		signCheckbox.checked
 			? signCheckbox.classList.remove('checkbox-error')
 			: (errors++, signCheckbox.classList.add('checkbox-error'))
+	if (errors == 0) {
+		signText.classList.add('show')
+	} else {
+		signText.classList.remove('show')
+	}
 }
 
 signButton.addEventListener('click', e => {
