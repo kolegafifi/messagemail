@@ -11,3 +11,7 @@ handleLogin = () => {
 		loginPass.value != '' ? loginPass.classList.remove('error') : loginPass.classList.add('error')
 }
 
+loginButton.addEventListener('click', e => {
+	e.preventDefault()
+	handleLogin()
+})
